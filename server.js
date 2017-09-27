@@ -12,7 +12,7 @@ app.get('/auth/google', (req, res) => {
     res.render('form.pug');
 });
 
-app.get('/logged', (res, req) => {
+app.get('/logged', (req, res) => {
     res.render('logged.pug', {username: req.query.username});
 });
 
